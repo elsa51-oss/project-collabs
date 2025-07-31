@@ -1,0 +1,343 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Modern Car Dealer
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold text-indigo-600 flex items-center space-x-2" href="#">
+     <img alt="Modern Car Dealer logo, stylized car silhouette in indigo color" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/e154088a-3eba-409b-954f-e8537c69c590.jpg" width="40"/>
+     <span>
+      SigmaShowroom
+     </span>
+    </a>
+    <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+     <a class="hover:text-indigo-600 transition" href="#home">
+      Home
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#inventory">
+      Inventory
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#services">
+      Services
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#about">
+      About Us
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#contact">
+      Contact
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button aria-label="Toggle menu" class="focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars text-2xl text-gray-700">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#home">
+     Home
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#inventory">
+     Inventory
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#services">
+     Services
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#about">
+     About Us
+    </a>
+    <a class="block px-6 py-3 hover:bg-indigo-50 transition" href="#contact">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white" id="home">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:space-x-16">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+      Find Your Dream Car Today
+     </h1>
+     <p class="text-lg md:text-xl mb-8">
+      Explore our premium selection of new and used vehicles with unbeatable prices and service.
+     </p>
+     <a class="inline-block bg-white text-indigo-600 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" href="#inventory">
+      Browse Inventory
+     </a>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0">
+     <img alt="Modern luxury car showroom with shiny new cars and bright lighting" class="rounded-lg shadow-lg mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/00e6e68a-65f2-4438-0855-7d34844f8b88.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Inventory Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="inventory">
+   <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">
+    Our Inventory
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+     <img alt="2024 Tesla Model S in sleek black color parked on a modern city street" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/f2f56875-147c-40ce-29b9-7b5da8045331.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+       2024 Tesla Model S
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Electric Sedan - 396 mi range - Autopilot
+      </p>
+      <p class="text-indigo-600 font-bold text-lg">
+       $89,990
+      </p>
+      <a class="mt-4 inline-block text-indigo-600 font-semibold hover:underline" href="#">
+       View Details
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+     <img alt="2023 BMW X5 luxury SUV in metallic blue parked in front of a modern building" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/2c3c1863-6ad5-49e8-5001-c717b2f1ca76.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+       2023 BMW X5
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Luxury SUV - 335 hp - All-Wheel Drive
+      </p>
+      <p class="text-indigo-600 font-bold text-lg">
+       $65,700
+      </p>
+      <a class="mt-4 inline-block text-indigo-600 font-semibold hover:underline" href="#">
+       View Details
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+     <img alt="2023 Audi A4 sedan in metallic gray parked on a scenic road with mountains" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/dec963b6-3b81-42b5-cac9-7a4b77f3f760.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+       2023 Audi A4
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Compact Executive Sedan - 201 hp - Quattro AWD
+      </p>
+      <p class="text-indigo-600 font-bold text-lg">
+       $39,100
+      </p>
+      <a class="mt-4 inline-block text-indigo-600 font-semibold hover:underline" href="#">
+       View Details
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+     <img alt="2024 Mercedes-Benz GLE luxury SUV in dark gray parked on a city street at dusk" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/62358353-4f25-4469-e743-02a49c9bcbbf.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+       2024 Mercedes-Benz GLE
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Luxury SUV - 362 hp - 4MATIC AWD
+      </p>
+      <p class="text-indigo-600 font-bold text-lg">
+       $72,500
+      </p>
+      <a class="mt-4 inline-block text-indigo-600 font-semibold hover:underline" href="#">
+       View Details
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+     <img alt="2023 Ford Mustang sports car in bright red parked on a racetrack" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/89703212-93f7-4029-feb5-44752f934413.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+       2023 Ford Mustang
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Sports Car - 450 hp - Rear-Wheel Drive
+      </p>
+      <p class="text-indigo-600 font-bold text-lg">
+       $55,300
+      </p>
+      <a class="mt-4 inline-block text-indigo-600 font-semibold hover:underline" href="#">
+       View Details
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+     <img alt="2023 Toyota Camry midsize sedan in forest green parked in a suburban neighborhood" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/6c32e374-8e9b-40ad-a69c-818eb2744dff.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+       2023 Toyota Camry
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Midsize Sedan - 203 hp - Front-Wheel Drive
+      </p>
+      <p class="text-indigo-600 font-bold text-lg">
+       $26,400
+      </p>
+      <a class="mt-4 inline-block text-indigo-600 font-semibold hover:underline" href="#">
+       View Details
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Services Section -->
+  <section class="bg-indigo-50 py-20" id="services">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-center text-indigo-700 mb-12">
+     Our Services
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+     <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition">
+      <i class="fas fa-car-side text-indigo-600 text-5xl mb-6">
+      </i>
+      <h3 class="text-xl font-semibold mb-3">
+       New &amp; Used Cars
+      </h3>
+      <p class="text-gray-600">
+       Wide selection of new and certified pre-owned vehicles to fit your needs and budget.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition">
+      <i class="fas fa-tools text-indigo-600 text-5xl mb-6">
+      </i>
+      <h3 class="text-xl font-semibold mb-3">
+       Maintenance &amp; Repairs
+      </h3>
+      <p class="text-gray-600">
+       Expert service technicians ready to keep your vehicle running smoothly.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition">
+      <i class="fas fa-handshake text-indigo-600 text-5xl mb-6">
+      </i>
+      <h3 class="text-xl font-semibold mb-3">
+       Financing Options
+      </h3>
+      <p class="text-gray-600">
+       Flexible financing plans and competitive rates to get you behind the wheel faster.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- About Us Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="about">
+   <div class="flex flex-col md:flex-row items-center md:space-x-16">
+    <div class="md:w-1/2 mb-12 md:mb-0">
+     <img alt="Professional car dealer team smiling in a modern dealership showroom" class="rounded-lg shadow-lg mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/5b7ae8e6-6dbc-4b15-1bbf-4c131284caec.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2">
+     <h2 class="text-3xl font-extrabold text-gray-900 mb-6">
+      About Sigma Showroom
+     </h2>
+     <p class="text-gray-700 mb-6 leading-relaxed">
+      At Sigma Showroom, we pride ourselves on delivering a premium car buying experience. With over 20 years in the automotive industry, our knowledgeable team is dedicated to helping you find the perfect vehicle that fits your lifestyle and budget.
+     </p>
+     <p class="text-gray-700 leading-relaxed">
+      From our extensive inventory to our expert service department, we are committed to excellence and customer satisfaction every step of the way.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-600 text-white py-20" id="contact">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-center mb-12">
+     Get in Touch
+    </h2>
+    <div class="max-w-3xl mx-auto bg-indigo-700 rounded-lg shadow-lg p-10">
+     <form action="#" class="space-y-6" method="POST">
+      <div>
+       <label class="block mb-2 font-semibold" for="name">
+        Name
+       </label>
+       <input class="w-full rounded-md px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block mb-2 font-semibold" for="email">
+        Email
+       </label>
+       <input class="w-full rounded-md px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+      </div>
+      <div>
+       <label class="block mb-2 font-semibold" for="message">
+        Message
+       </label>
+       <textarea class="w-full rounded-md px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="message" name="message" placeholder="How can we help you?" required="" rows="4"></textarea>
+      </div>
+      <button class="w-full bg-white text-indigo-600 font-bold py-3 rounded-md hover:bg-indigo-50 transition" type="submit">
+       Send Message
+      </button>
+     </form>
+    </div>
+    <div class="mt-12 text-center space-y-4">
+     <p>
+      <i class="fas fa-map-marker-alt mr-2">
+      </i>
+      1234 SigmaShowroom Blvd, Motor City, USA
+     </p>
+     <p>
+      <i class="fas fa-phone-alt mr-2">
+      </i>
+      (123) 456-7890
+     </p>
+     <p>
+      <i class="fas fa-envelope mr-2">
+      </i>
+      contact@sigmashowroom.com
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">
+     © 2024 Sigma showroom. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-white" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-white" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-white" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-white" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
