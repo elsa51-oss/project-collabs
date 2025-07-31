@@ -1,416 +1,95 @@
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Dealer Mobil
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-      font-family: 'Poppins', sans-serif;
-    }
-  </style>
- </head>
- <body class="bg-gray-50 text-gray-800">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full z-30">
-   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a class="text-2xl font-semibold text-blue-600 flex items-center space-x-2" href="#">
-     <img alt="Logo Syakir Astra, stylized SA letters in blue and white" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/a6c6ee88-fbd3-4725-94fe-4dc9af0dd9ba.jpg" width="40"/>
-     <span>
-      Cahaya Sigma
-     </span>
-    </a>
-    <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
-     <a class="hover:text-blue-600 transition" href="#home">
-      Home
-     </a>
-     <a class="hover:text-blue-600 transition" href="#about">
-      Tentang Kami
-     </a>
-     <a class="hover:text-blue-600 transition" href="#inventory">
-      Inventaris Mobil
-     </a>
-     <a class="hover:text-blue-600 transition" href="#services">
-      Layanan
-     </a>
-     <a class="hover:text-blue-600 transition" href="#contact">
-      Kontak
-     </a>
-    </div>
-    <div class="md:hidden">
-     <button class="text-gray-700 focus:outline-none" id="menu-btn">
-      <i class="fas fa-bars fa-lg">
-      </i>
-     </button>
-    </div>
-   </div>
-   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
-    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-blue-50 transition" href="#home">
-     Home
-    </a>
-    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-blue-50 transition" href="#about">
-     Tentang Kami
-    </a>
-    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-blue-50 transition" href="#inventory">
-     Inventaris Mobil
-    </a>
-    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-blue-50 transition" href="#services">
-     Layanan
-    </a>
-    <a class="block px-6 py-3 hover:bg-blue-50 transition" href="#contact">
-     Kontak
-    </a>
-   </div>
-  </nav>
-  <!-- Hero Section -->
-  <section class="pt-24 bg-gradient-to-r from-blue-600 to-blue-400 text-white" id="home">
-   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:space-x-12">
-    <div class="md:w-1/2 text-center md:text-left">
-     <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-      Cahaya Sigma
-      <br/>
-      Dealer Mobil Terpercaya
-     </h1>
-     <p class="text-lg md:text-xl mb-8">
-      Menyediakan mobil berkualitas dengan harga terbaik dan layanan profesional.
-     </p>
-     <a class="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition" href="#inventory">
-      Lihat Inventaris Mobil
-     </a>
-    </div>
-    <div class="md:w-1/2 mt-10 md:mt-0">
-     <img alt="Modern car showroom with various cars displayed under bright lighting, clean and spacious interior" class="rounded-lg shadow-lg mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/67f461df-549f-407e-0eb8-1662867cd595.jpg" width="600"/>
-    </div>
-   </div>
-  </section>
-  <!-- About Section -->
-  <section class="max-w-7xl mx-auto px-6 py-20" id="about">
-   <div class="flex flex-col md:flex-row items-center md:space-x-16">
-    <div class="md:w-1/2 mb-10 md:mb-0">
-     <img alt="Professional car salesperson handing keys to happy customer in a modern car showroom" class="rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/7468c783-02f1-43b3-d858-5f7944c8084d.jpg" width="600"/>
-    </div>
-    <div class="md:w-1/2">
-     <h2 class="text-3xl font-bold mb-6 text-blue-600">
-      Tentang Cahaya Sigma
-     </h2>
-     <p class="text-gray-700 mb-4 leading-relaxed">
-      Cahaya Sigma adalah dealer mobil modern yang berkomitmen memberikan pengalaman terbaik bagi pelanggan. Kami menyediakan berbagai pilihan mobil baru dan bekas berkualitas dengan harga kompetitif.
-     </p>
-     <p class="text-gray-700 leading-relaxed">
-      Dengan tim profesional dan layanan purna jual yang handal, kami siap membantu Anda menemukan mobil impian dengan proses yang mudah dan transparan.
-     </p>
-    </div>
-   </div>
-  </section>
-<!-- Inventory Section -->
-  <section class="bg-gray-100 py-20" id="inventory">
-   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-12 text-center text-blue-600">
-     Inventaris Mobil
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img src="camry.jpg" class="w-full h-48 object-cover" height="400" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Toyota Camry 2023
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Sedan nyaman dengan teknologi terbaru dan efisiensi bahan bakar tinggi.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 450.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img src="crv.jpg" class="w-full h-48 object-cover" height="400" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Honda CR-V 2022
-       </h3>
-       <p class="text-gray-600 mb-4">
-        SUV tangguh dengan ruang luas dan fitur keselamatan canggih.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 520.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="White compact car parked near a beach with palm trees and blue sky" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/f55e5c27-4045-4cc2-56a6-ee258fdcef54.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Suzuki Swift 2023
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Mobil kompak yang lincah dan hemat bahan bakar, cocok untuk perkotaan.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 230.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Blue pickup truck parked in an industrial area with warehouse background" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/5f2dd4e9-c2b0-4cfd-a410-f75cdfc74a47.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Ford Ranger 2021
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Pickup tangguh dengan kapasitas angkut besar dan performa handal.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 400.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Silver luxury sedan parked in a city at night with illuminated buildings" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/38a50087-825f-4805-4f41-a71c1beb1704.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Mercedes-Benz E-Class 2022
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Sedan mewah dengan fitur premium dan kenyamanan maksimal.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 1.200.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Green electric car charging at a modern charging station in urban environment" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/bfc372db-32d6-4f61-2e65-3152d4382cf6.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Nissan Leaf 2023
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Mobil listrik ramah lingkungan dengan teknologi terbaru dan jarak tempuh jauh.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 550.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="White luxury SUV parked in front of a modern building with glass facade" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/773b1df1-0e24-4f61-d312-f190538bb844.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Lexus RX 2023
-       </h3>
-       <p class="text-gray-600 mb-4">
-        SUV mewah dengan desain elegan dan fitur keselamatan canggih.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 1.100.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Yellow sporty coupe car parked on a city street with skyscrapers" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e12c4f85-3be1-41ad-4c92-5cc88b9b42d0.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Chevrolet Camaro 2022
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Mobil sport dengan performa tinggi dan desain agresif.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 900.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Silver hatchback car parked near a park with green trees and blue sky" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/02392ea6-afdf-4ecf-0984-421fffd745e2.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Volkswagen Golf 2023
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Hatchback kompak dengan kenyamanan dan teknologi modern.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 350.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Blue minivan parked in a suburban neighborhood with houses and trees" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/71e870e7-dd78-47df-b823-3dd66639fa27.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Toyota Sienna 2022
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Minivan luas dan nyaman, cocok untuk keluarga besar.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 600.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Orange convertible sports car parked on a coastal road with ocean view" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/09653fb1-4677-477c-a46c-3f88a8d57eb4.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        Mazda MX-5 Miata 2023
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Convertible sporty dengan handling luar biasa dan desain stylish.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 700.000.000
-       </p>
-      </div>
-     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <img alt="Black luxury sedan parked in front of a luxury hotel entrance at night" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/909f20e2-1870-434a-5227-e3f67a99de69.jpg" width="600"/>
-      <div class="p-6">
-       <h3 class="text-xl font-semibold mb-2">
-        BMW 7 Series 2022
-       </h3>
-       <p class="text-gray-600 mb-4">
-        Sedan premium dengan teknologi mutakhir dan kenyamanan kelas atas.
-       </p>
-       <p class="text-blue-600 font-bold text-lg">
-        Rp 1.500.000.000
-       </p>
-      </div>
-     </div>
-    
-  </section>
-  <!-- Services Section -->
-  <section class="max-w-7xl mx-auto px-6 py-20" id="services">
-   <h2 class="text-3xl font-bold mb-12 text-center text-blue-600">
-    Layanan Kami
-   </h2>
-   <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-    <div class="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-xl transition">
-     <i class="fas fa-car fa-3x text-blue-600 mb-6">
-     </i>
-     <h3 class="text-xl font-semibold mb-4">
-      Penjualan Mobil Baru &amp; Bekas
-     </h3>
-     <p class="text-gray-700 leading-relaxed">
-      Menyediakan berbagai pilihan mobil baru dan bekas berkualitas dengan harga terbaik.
-     </p>
-    </div>
-    <div class="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-xl transition">
-     <i class="fas fa-tools fa-3x text-blue-600 mb-6">
-     </i>
-     <h3 class="text-xl font-semibold mb-4">
-      Servis &amp; Perawatan
-     </h3>
-     <p class="text-gray-700 leading-relaxed">
-      Layanan servis dan perawatan mobil dengan teknisi berpengalaman dan suku cadang asli.
-     </p>
-    </div>
-    <div class="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-xl transition">
-     <i class="fas fa-handshake fa-3x text-blue-600 mb-6">
-     </i>
-     <h3 class="text-xl font-semibold mb-4">
-      Konsultasi Pembiayaan
-     </h3>
-     <p class="text-gray-700 leading-relaxed">
-      Membantu Anda mendapatkan solusi pembiayaan yang sesuai dengan kebutuhan dan kemampuan.
-     </p>
-    </div>
-   </div>
-  </section>
-  <!-- Contact Section -->
-  <section class="bg-blue-600 text-white py-20" id="contact">
-   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-12 text-center">
-     Hubungi Kami
-    </h2>
-    <div class="max-w-3xl mx-auto bg-blue-500 rounded-lg p-10 shadow-lg">
-     <form action="#" class="space-y-6" method="POST">
-      <div>
-       <label class="block mb-2 font-semibold" for="name">
-        Nama Lengkap
-       </label>
-       <input class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-white" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required="" type="text"/>
-      </div>
-      <div>
-       <label class="block mb-2 font-semibold" for="email">
-        Email
-       </label>
-       <input class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-white" id="email" name="email" placeholder="Masukkan email Anda" required="" type="email"/>
-      </div>
-      <div>
-       <label class="block mb-2 font-semibold" for="phone">
-        Nomor Telepon
-       </label>
-       <input class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-white" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required="" type="tel"/>
-      </div>
-      <div>
-       <label class="block mb-2 font-semibold" for="message">
-        Pesan
-       </label>
-       <textarea class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-white" id="message" name="message" placeholder="Tulis pesan Anda di sini" required="" rows="4"></textarea>
-      </div>
-      <button class="w-full bg-white text-blue-600 font-semibold py-3 rounded-md hover:bg-gray-100 transition" type="submit">
-       Kirim Pesan
-      </button>
-     </form>
-    </div>
-    <div class="mt-12 text-center space-y-4">
-     <p>
-      <i class="fas fa-map-marker-alt mr-2">
-      </i>
-      Jl. Merdeka No.123, Jakarta, Indonesia
-     </p>
-     <p>
-      <i class="fas fa-phone mr-2">
-      </i>
-      +62 812 3456 7890
-     </p>
-     <p>
-      <i class="fas fa-envelope mr-2">
-      </i>
-      info@cahayasigma.co.id
-     </p>
-    </div>
-   </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 py-8">
-   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-    <p class="text-sm">
-     © 2024 Cahaya Sigma. All rights reserved.
-    </p>
-    <div class="flex space-x-6 mt-4 md:mt-0">
-     <a aria-label="Facebook" class="hover:text-white transition" href="#">
-      <i class="fab fa-facebook fa-lg">
-      </i>
-     </a>
-     <a aria-label="Instagram" class="hover:text-white transition" href="#">
-      <i class="fab fa-instagram fa-lg">
-      </i>
-     </a>
-     <a aria-label="Twitter" class="hover:text-white transition" href="#">
-      <i class="fab fa-twitter fa-lg">
-      </i>
-     </a>
-     <a aria-label="LinkedIn" class="hover:text-white transition" href="#">
-      <i class="fab fa-linkedin fa-lg">
-      </i>
-     </a>
-    </div>
-   </div>
-  </footer>
-  <script>
-   const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sigma Dealer Mobil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
- </body>
+  <header>
+    <h1>Sigma Dealer Mobil</h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#daftar">Daftar Mobil</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda" class="section">
+    <img src="https://source.unsplash.com/featured/?car-dealership" alt="Dealer Mobil" class="gambar-beranda">
+    <h2>Selamat Datang di Sigma Dealer Mobil</h2>
+    <p>Kami menyediakan mobil berkualitas dengan harga bersaing dan pelayanan terbaik.</p>
+  </section>
+
+  <section id="daftar" class="section">
+    <h2>Daftar Mobil</h2>
+    <div class="mobil-grid">
+      <div class="mobil-card">
+        <img src="https://source.unsplash.com/featured/?toyota" alt="Toyota Avanza">
+        <h3>Toyota Avanza</h3>
+        <p>Harga: Rp 200.000.000</p>
+      </div>
+      <div class="mobil-card">
+        <img src="https://source.unsplash.com/featured/?honda" alt="Honda Brio">
+        <h3>Honda Brio</h3>
+        <p>Harga: Rp 180.000.000</p>
+      </div>
+      <div class="mobil-card">
+        <img src="https://source.unsplash.com/featured/?mitsubishi" alt="Mitsubishi Xpander">
+        <h3>Mitsubishi Xpander</h3>
+        <p>Harga: Rp 250.000.000</p>
+      </div>
+      <div class="mobil-card">
+        <img src="https://source.unsplash.com/featured/?suzuki" alt="Suzuki Ertiga">
+        <h3>Suzuki Ertiga</h3>
+        <p>Harga: Rp 220.000.000</p>
+      </div>
+      <div class="mobil-card">
+        <img src="https://source.unsplash.com/featured/?daihatsu" alt="Daihatsu Sigra">
+        <h3>Daihatsu Sigra</h3>
+        <p>Harga: Rp 160.000.000</p>
+      </div>
+      <div class="mobil-card">
+        <img src="https://source.unsplash.com/featured/?wuling" alt="Wuling Confero">
+        <h3>Wuling Confero</h3>
+        <p>Harga: Rp 190.000.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="section">
+    <h2>Hubungi Kami</h2>
+    <form action="#" method="post" class="form-kontak">
+      <input type="text" name="nama" placeholder="Nama Anda" required />
+      <input type="email" name="email" placeholder="Email Anda" required />
+      <textarea name="pesan" rows="5" placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <section id="tentang" class="section">
+    <h2>Tentang Kami</h2>
+    <p>
+      Sigma Dealer Mobil adalah showroom terpercaya yang telah melayani masyarakat Indonesia sejak tahun 2010. Kami berkomitmen untuk menyediakan kendaraan berkualitas, layanan purna jual yang maksimal, serta proses pembelian yang mudah dan transparan.
+    </p>
+    <br />
+    <p>
+      Dengan tim profesional dan berpengalaman, kami membantu pelanggan menemukan mobil yang sesuai dengan kebutuhan dan anggaran mereka. Kami juga menyediakan layanan tukar tambah, kredit kendaraan, dan konsultasi gratis.
+    </p>
+    <br />
+    <p>
+      Kepercayaan Anda adalah prioritas kami. Datang dan kunjungi dealer kami atau hubungi kami untuk mendapatkan penawaran terbaik hari ini!
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sigma Dealer Mobil</p>
+  </footer>
+
+</body>
 </html>
