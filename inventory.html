@@ -9,11 +9,58 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 </head>
-<body>
-   <nav style="text-align: center; margin-top: 20px">
-      <a href="inventory.html">Inventory</a> |
-      <a href="service.html">Services</a>
-    </nav>
+<style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold text-indigo-600 flex items-center space-x-2" href="#">
+     <img alt="Modern Car Dealer logo, stylized car silhouette in indigo color" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/e154088a-3eba-409b-954f-e8537c69c590.jpg" width="40"/>
+     <span>
+      SigmaShowroom
+     </span>
+    </a>
+    <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+     <a class="hover:text-indigo-600 transition" href="index.html">
+      Home
+     </a>
+     <a class="hover:text-indigo-600 transition" href="inventory.html">
+      Inventory
+     </a>
+     <a class="hover:text-indigo-600 transition" href="service.html">
+      Services
+     </a>
+     <a class="hover:text-indigo-600 transition" href="contact.html">
+      Contact
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button aria-label="Toggle menu" class="focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars text-2xl text-gray-700">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#home">
+     Home
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#inventory">
+     Inventory
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#services">
+     Services
+    </a>
+    <a class="block px-6 py-3 hover:bg-indigo-50 transition" href="contact.html">
+     Contact
+    </a>
+   </div>
+  </nav>
 
     <!-- Toyota Section -->
    <section class="space-y-8" id="toyota">
