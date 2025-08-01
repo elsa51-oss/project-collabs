@@ -3,93 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sigma Dealer Mobil</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>SigmaShowroom</title>
+   <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-  <header>
-    <h1>Sigma Dealer Mobil</h1>
-    <nav>
-      <ul>
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#daftar">Daftar Mobil</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-        <li><a href="#tentang">Tentang Kami</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="beranda" class="section">
-    <img src="https://source.unsplash.com/featured/?car-dealership" alt="Dealer Mobil" class="gambar-beranda">
-    <h2>Selamat Datang di Sigma Dealer Mobil</h2>
-    <p>Kami menyediakan mobil berkualitas dengan harga bersaing dan pelayanan terbaik.</p>
-  </section>
-
-  <section id="daftar" class="section">
-    <h2>Daftar Mobil</h2>
-    <div class="mobil-grid">
-      <div class="mobil-card">
-        <img src="https://source.unsplash.com/featured/?toyota" alt="Toyota Avanza">
-        <h3>Toyota Avanza</h3>
-        <p>Harga: Rp 200.000.000</p>
-      </div>
-      <div class="mobil-card">
-        <img src="https://source.unsplash.com/featured/?honda" alt="Honda Brio">
-        <h3>Honda Brio</h3>
-        <p>Harga: Rp 180.000.000</p>
-      </div>
-      <div class="mobil-card">
-        <img src="https://source.unsplash.com/featured/?mitsubishi" alt="Mitsubishi Xpander">
-        <h3>Mitsubishi Xpander</h3>
-        <p>Harga: Rp 250.000.000</p>
-      </div>
-      <div class="mobil-card">
-        <img src="https://source.unsplash.com/featured/?suzuki" alt="Suzuki Ertiga">
-        <h3>Suzuki Ertiga</h3>
-        <p>Harga: Rp 220.000.000</p>
-      </div>
-      <div class="mobil-card">
-        <img src="https://source.unsplash.com/featured/?daihatsu" alt="Daihatsu Sigra">
-        <h3>Daihatsu Sigra</h3>
-        <p>Harga: Rp 160.000.000</p>
-      </div>
-      <div class="mobil-card">
-        <img src="https://source.unsplash.com/featured/?wuling" alt="Wuling Confero">
-        <h3>Wuling Confero</h3>
-        <p>Harga: Rp 190.000.000</p>
-      </div>
+<style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold text-indigo-600 flex items-center space-x-2" href="#">
+     <img alt="Modern Car Dealer logo, stylized car silhouette in indigo color" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/e154088a-3eba-409b-954f-e8537c69c590.jpg" width="40"/>
+     <span>
+      SigmaShowroom
+     </span>
+    </a>
+    <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+     <a class="hover:text-indigo-600 transition" href="#home">
+      Home
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#inventory">
+      Inventory
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#services">
+      Services
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#contact">
+      Contact
+     </a>
     </div>
+    <div class="md:hidden">
+     <button aria-label="Toggle menu" class="focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars text-2xl text-gray-700">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#home">
+     Home
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#inventory">
+     Inventory
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#services">
+     Services
+    </a>
+    <a class="block px-6 py-3 hover:bg-indigo-50 transition" href="#contact">
+     Contact
+    </a>
+   </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white" id="home">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:space-x-16">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+      Find Your Dream Car Today
+     </h1>
+     <p class="text-lg md:text-xl mb-8">
+      Explore our premium selection of new and used vehicles with unbeatable prices and service.
+     </p>
+     <a class="inline-block bg-white text-indigo-600 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" href="#inventory">
+      Browse Inventory
+     </a>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0">
+     <img alt="Modern luxury car showroom with shiny new cars and bright lighting" class="rounded-lg shadow-lg mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/00e6e68a-65f2-4438-0855-7d34844f8b88.jpg" width="600"/>
+    </div>
+   </div>
   </section>
 
-  <section id="kontak" class="section">
-    <h2>Hubungi Kami</h2>
-    <form action="#" method="post" class="form-kontak">
-      <input type="text" name="nama" placeholder="Nama Anda" required />
-      <input type="email" name="email" placeholder="Email Anda" required />
-      <textarea name="pesan" rows="5" placeholder="Pesan Anda" required></textarea>
-      <button type="submit">Kirim</button>
-    </form>
+  <!-- About Us Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="about">
+   <div class="flex flex-col md:flex-row items-center md:space-x-16">
+    <div class="md:w-1/2 mb-12 md:mb-0">
+     <img alt="Professional car dealer team smiling in a modern dealership showroom" class="rounded-lg shadow-lg mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/5b7ae8e6-6dbc-4b15-1bbf-4c131284caec.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2">
+     <h2 class="text-3xl font-extrabold text-gray-900 mb-6">
+      About Sigma Showroom
+     </h2>
+     <p class="text-gray-700 mb-6 leading-relaxed">
+      At Sigma Showroom, we pride ourselves on delivering a premium car buying experience. With over 20 years in the automotive industry, our knowledgeable team is dedicated to helping you find the perfect vehicle that fits your lifestyle and budget.
+     </p>
+     <p class="text-gray-700 leading-relaxed">
+      From our extensive inventory to our expert service department, we are committed to excellence and customer satisfaction every step of the way.
+     </p>
+    </div>
+   </div>
   </section>
 
-  <section id="tentang" class="section">
-    <h2>Tentang Kami</h2>
-    <p>
-      Sigma Dealer Mobil adalah showroom terpercaya yang telah melayani masyarakat Indonesia sejak tahun 2010. Kami berkomitmen untuk menyediakan kendaraan berkualitas, layanan purna jual yang maksimal, serta proses pembelian yang mudah dan transparan.
-    </p>
-    <br />
-    <p>
-      Dengan tim profesional dan berpengalaman, kami membantu pelanggan menemukan mobil yang sesuai dengan kebutuhan dan anggaran mereka. Kami juga menyediakan layanan tukar tambah, kredit kendaraan, dan konsultasi gratis.
-    </p>
-    <br />
-    <p>
-      Kepercayaan Anda adalah prioritas kami. Datang dan kunjungi dealer kami atau hubungi kami untuk mendapatkan penawaran terbaik hari ini!
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Sigma Dealer Mobil</p>
   </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
